@@ -20,6 +20,7 @@ import { SiMongodb } from "react-icons/si";
 import { DiRedis } from "react-icons/di";
 import { FaNodeJs } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
+import { ul } from "framer-motion/client";
 
 export const NAVIGATION_LINKS = [
   { label: "Projects", href: "#projects" },
@@ -34,7 +35,7 @@ export const HERO = {
   name: "Ujjawal Patel",
   greet: "Hello there! 👋🏻",
   description:
-    "I am a software developer deeply interested in AI/ML, my envisions harnessing these transformative technologies to solve real-world problems.",
+    "I am a software developer deeply interested in AI/ML, I envisions harnessing these transformative technologies to solve real-world problems.",
 };
 
 export const PROJECTS = [
@@ -90,8 +91,8 @@ export const PROJECTS = [
 
 export const BIO = [
   "I studied Information Technology at the Shantilal Shah Government Engineering College, from which I graduated in June,2024.",
-  "Currently i am pursuing my Machine Learning course from Udemy and half of the course is completed.",
-  "An aspiring software developer actively looking for a full-time job."
+  "Currently I am pursuing my Machine Learning course from Udemy.",
+  "I am aspiring software developer actively looking for a full-time entry level position."
 ];
 
 export const SKILLS = [
@@ -159,22 +160,23 @@ export const EDUCATION = [
     institution: "Udemy (Online Course)",
     duration: "October 2024 - Present",
     description:
-      "This Machine Learning course has all topic covered by the Instructor and the course is packed with practical exercises that are based on real-life case studies.",
+      "This Machine Learning course has covers all topic by the Instructor and the course is packed with practical exercises that are based on real-life case studies.",
   },
   {
     degree: "Bachelor of Engineering in Information Technology",
     institution: "Shantilal Shah Government Engineering College, Bhavnagar",
     duration: "November 2020 - June 2024",
     description:
-      "Focused on web development, programming languages, and database management. Actively involved in coding clubs and hackathons, where I developed several web applications using HTML, CSS, JavaScript, and PHP. Completed a senior project on developing an e-commerce platform. Graduated with a 7.72 CGPA.",
+      "Focused on web development, programming languages, and database management. Actively involved in coding clubs and hackathons, where I developed several web applications using HTML, CSS, JavaScript, and PHP. Completed a senior project on developing an e-commerce platform.",
+    content: (<ul><li>ujjawal</li></ul>)
   },
-  {
-    degree: "12th - Gujarat Higher Secondary Education Board",
-    institution: "Shree Swaminarayan English Medium School, Vapi",
-    duration: "April 2019 - March 2020",
-    description:
-      "Passed out with 64.4 Percentage",
-  },
+  // {
+  //   degree: "12th - Gujarat Higher Secondary Education Board",
+  //   institution: "Shree Swaminarayan English Medium School, Vapi",
+  //   duration: "April 2019 - March 2020",
+  //   description:
+  //     "",
+  // },
 ];
 
 export const SOCIAL_MEDIA_LINKS = [
