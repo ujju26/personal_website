@@ -35,7 +35,7 @@ export const HERO = {
   name: "Ujjawal Patel",
   greet: "Hello there! 👋🏻",
   description:
-    "I am a software developer deeply interested in AI/ML, I envisions harnessing these transformative technologies to solve real-world problems.",
+    "I am a software developer deeply interested in AI/ML, I envision harnessing these transformative technologies to solve real-world problems.",
 };
 
 export const PROJECTS = [
@@ -45,24 +45,24 @@ export const PROJECTS = [
     description:
       "A personal portfolio website built with React and Tailwind CSS to showcase my skills, projects, and contact information.",
     image: projectImage1,
-    githubLink: "https://github.com/user/personal-portfolio",
+    githubLink: "https://github.com/ujju26/personal_website",
   },
-  // {
-  //   id: 2,
-  //   name: "E-Commerce Platform",
-  //   description:
-  //     "An e-commerce web application developed using Next.js and Stripe for payment integration, featuring a comprehensive product catalog, shopping cart, and checkout system.",
-  //   image: projectImage2,
-  //   githubLink: "https://github.com/user/ecommerce-platform",
-  // },
-  // {
-  //   id: 3,
-  //   name: "Task Management Tool",
-  //   description:
-  //     "A task management application built with React and Redux for efficient task tracking and team collaboration, including features like project boards, task assignment, and progress tracking.",
-  //   image: projectImage3,
-  //   githubLink: "https://github.com/user/task-management-tool",
-  // },
+  {
+    id: 2,
+    name: "Volume Control using Hand Gesture Recognition",
+    description:
+      "Developed a hand gesture-based volume control system using Python, OpenCV, MediaPipe, and NumPy. Leveraged real-time hand tracking to adjust volume based on thumb and index finger distance, with visual feedback via OpenCV. Delivered a functional prototype, showcasing expertise in computer vision and AI solutions.",
+    image: projectImage2,
+    githubLink: "https://github.com/ujju26/Volume-Control-using-Hand-Getsure-Recognition",
+  },
+  {
+    id: 3,
+    name: "Voice Assistant",
+    description:
+      "Developed a Python-based voice assistant with capabilities such as web browsing, task management, and music playback. Integrated speech recognition and pyttsx3 for real-time interaction, along with automation features like Google search, Wikipedia summaries, and task notifications to enhance productivity.",
+    image: projectImage3,
+    githubLink: "https://github.com/ujju26/voice-assistant",
+  },
   // {
   //   id: 4,
   //   name: "Weather App",
@@ -143,14 +143,19 @@ export const EXPERIENCES = [
     company: "Script India",
     duration: "January 2024 - April 2024",
     description:
-      "Worked on Asp.net as intern for this 3 month and developed Complaint Management System. Created DFD (Data Flow Diagram) and Use Case Diagram (User, Admin and Engineer) using EdrawMax.", 
+      <ul>
+        <li>• Developed and designed a full-stack Complaint Management System to streamline issue reporting and resolution processes.</li>
+        <li>• Engineered a robust backend architecture using C-Sharp/Asp.net, enhancing system reliability and performance. Moreover, a normalized SQL database was developed to manage large datasets effectively, ensuring data integrity and swift retrieval.</li>
+        <li>• Created DFD (Data flow Diagram) and User Case diagram for the data using EdrawMax, ensuring clear and comprehensive documentation of data elements.</li>
+        <li>• Adhered to industry best practices for software design and development, focusing on scalability, maintainability, and performance optimization.</li>
+      </ul>, 
   },
   {
     title: "Internship",
     company: "Script India",
     duration: "27 July 2023 - 10 August 2023",
     description:
-      "Worked on Python as intern for this 2 weeks. Worked on Hand Gesture Recognition using modules like pyautogui, cv2 and mediapipe. ",
+      "Worked on Python as intern for 2 weeks. Worked on Hand Gesture Recognition using modules like pyautogui, cv2 and mediapipe. ",
   },
 ];
 
@@ -160,7 +165,7 @@ export const EDUCATION = [
     institution: "Udemy (Online Course)",
     duration: "October 2024 - Present",
     description:
-      "This Machine Learning course has covers all topic by the Instructor and the course is packed with practical exercises that are based on real-life case studies.",
+      "This Machine Learning course has covered all topic by the Instructor and the course is packed with practical exercises that are based on real-life case studies.",
   },
   {
     degree: "Bachelor of Engineering in Information Technology",
@@ -168,7 +173,6 @@ export const EDUCATION = [
     duration: "November 2020 - June 2024",
     description:
       "Focused on web development, programming languages, and database management. Actively involved in coding clubs and hackathons, where I developed several web applications using HTML, CSS, JavaScript, and PHP. Completed a senior project on developing an e-commerce platform.",
-    content: (<ul><li>ujjawal</li></ul>)
   },
   // {
   //   degree: "12th - Gujarat Higher Secondary Education Board",
