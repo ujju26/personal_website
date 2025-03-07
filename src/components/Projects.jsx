@@ -4,10 +4,10 @@ import { motion } from "framer-motion"
 import { useState } from "react"
 
 const Projects = () => {
-    const [activeProject, setActiveProject] = useState(null);
+    const [visibleProject, setVisibleProject] = useState(null);
 
-    const toggleProject = (id) => {
-        setActiveProject(activeProject === id ? null : id); // Toggle description visibility on mobile
+    const handleToggle = (id) => {
+        setVisibleProject(visibleProject === id ? null : id); // Toggle visibility for mobile
     };
 
     return (
@@ -23,8 +23,8 @@ const Projects = () => {
                 {PROJECTS.map((project) => (
                     <motion.div 
                         key={project.id}
-                        className="group relative overflow-hidden rounded-3xl border border-gray-600"
-                        onClick={() => toggleProject(project.id)}> {/* Click for mobile */}
+                        className="group relative overflow-hidden rounded-3xl border border-gray-600 cursor-pointer"
+                        onClick={() => handleToggle(project.id)}> {/* Click to show on mobile */}
                         
                         {/* Project Image */}
                         <motion.img 
@@ -37,10 +37,10 @@ const Projects = () => {
                         <motion.div
                             initial={{ opacity: 0 }}
                             whileHover={{ opacity: 1 }}
+                            animate={{ opacity: visibleProject === project.id ? 1 : 0 }}
                             transition={{ duration: 0.5 }}
-                            className={`absolute inset-0 flex flex-col items-center justify-center text-white backdrop-blur-lg transition-opacity duration-500 
-                              ${activeProject === project.id ? "opacity-100" : "opacity-0 lg:group-hover:opacity-100"}`}
-                            style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}> {/* Ensures readability */}
+                            className="absolute inset-0 flex flex-col items-center justify-center text-white backdrop-blur-lg transition-opacity duration-500"
+                            style={{ backgroundColor: "rgba(0, 0, 0, 0.6)", display: "flex", opacity: visibleProject === project.id ? 1 : 0 }}>
                             
                             <h3 className="mb-2 text-xl font-semibold">{project.name}</h3>
                             <p className="mb-4 p-4 text-center text-sm">{project.description}</p>

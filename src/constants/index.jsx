@@ -63,14 +63,14 @@ export const PROJECTS = [
     image: projectImage3,
     githubLink: "https://github.com/ujju26/voice-assistant",
   },
-  // {
-  //   id: 4,
-  //   name: "Weather App",
-  //   description:
-  //     "A weather application that uses the OpenWeatherMap API to fetch and display current weather data and forecasts for various locations, built with React and styled-components.",
-  //   image: projectImage4,
-  //   githubLink: "https://github.com/user/weather-app",
-  // },
+  {
+    id: 4,
+    name: "Eye Controlling Mouse",
+    description:
+      "This project enables hands-free mouse control using eye movements by leveraging OpenCV, MediaPipe FaceMesh, and PyAutoGUI. It tracks eye landmarks in real-time, moves the cursor based on eye position, and detects intentional blinks to trigger clicks, providing an intuitive and accessible way to interact with a computer.",
+    image: projectImage4,
+    githubLink: "https://github.com/ujju26/Eye-Controoling-Mouse",
+  },
   // {
   //   id: 5,
   //   name: "Blog Platform",
