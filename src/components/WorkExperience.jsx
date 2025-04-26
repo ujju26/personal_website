@@ -25,6 +25,7 @@ const WorkExperience = () => {
                        key={index} 
                        className='rounded-xl border border-stone-50/30 bg-white/10 p-4'>
                         <h3 className='text-2xl font-semibold'>{experience.title}</h3>
+                        <p className='text-sm text-stone-300'>{experience.company}</p>
                         <p className='text-sm text-stone-300'>{experience.duration}</p>
                         <p className='mt-2 text-base'>{experience.description}</p>
                     </motion.div>

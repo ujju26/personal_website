@@ -35,7 +35,7 @@ export const HERO = {
   name: "Ujjawal Patel",
   greet: "Hello there! 👋🏻",
   description:
-    "I am a software developer deeply interested in AI/ML, I envision harnessing these transformative technologies to solve real-world problems.",
+    "I am a Python Developer deeply interested in AI/ML, I envision harnessing these transformative technologies to solve real-world problems.",
 };
 
 export const PROJECTS = [
@@ -53,7 +53,7 @@ export const PROJECTS = [
     description:
       "Developed a hand gesture-based volume control system using Python, OpenCV, MediaPipe, and NumPy. Leveraged real-time hand tracking to adjust volume based on thumb and index finger distance, with visual feedback via OpenCV. Delivered a functional prototype, showcasing expertise in computer vision and AI solutions.",
     image: projectImage2,
-    githubLink: "https://github.com/ujju26/Volume-Control-using-Hand-Getsure-Recognition",
+    githubLink: "https://github.com/ujju26/Volume-Control-using-Hand-Gesture-Recognition",
   },
   {
     id: 3,
@@ -90,17 +90,18 @@ export const PROJECTS = [
 ];
 
 export const BIO = [
-  "I studied Information Technology at the Shantilal Shah Government Engineering College, from which I graduated in June,2024.",
-  "Currently I am pursuing my Machine Learning course from Udemy.",
-  "I am aspiring software developer actively looking for a full-time entry level position."
+  "I am aspiring Python Developer actively looking for a full-time entry level position.",
+  "I studied Information Technology at the Shantilal Shah Government Engineering College, from which I graduated in June 2024.",
+  "After graduation I started my internship as a Python Developer in Qualtab from June 2024",
+  "In that time period I had completed my Machine Learning course from Udemy."
 ];
 
 export const SKILLS = [
-  {
-    icon: <RiReactjsLine className="text-4xl text-cyan-400 lg:text-5xl" />,
-    name: "React",
-    experience: "2+ years",
-  },
+  // {
+  //   icon: <RiReactjsLine className="text-4xl text-cyan-400 lg:text-5xl" />,
+  //   name: "React",
+  //   experience: "2+ years",
+  // },
   // {
   //   icon: <TbBrandNextjs className="text-4xl text-white lg:text-5xl" />,
   //   name: "Next.js",
@@ -108,6 +109,21 @@ export const SKILLS = [
   // },
   {
     name: "Python",
+  },
+  {
+    name: "FastAPI",
+  },
+  {
+    name: "React",
+  },
+  {
+    name: "MongoDB",
+  },
+  {
+    name: "Langchain",
+  },
+  {
+    name: "LLM",
   },
   {
     name: "TailwindCSS",
@@ -140,6 +156,18 @@ export const SKILLS = [
 export const EXPERIENCES = [
   {
     title: "Internship",
+    company: "Qualtab",
+    duration: "June 2024 - Present",
+    description:
+      <ul>
+        <li>• Built an AI-powered web application that allows users to upload annual company reports (PDFs) and interact with them using natural language queries, powered by LangChain and LLMs.</li>
+        <li>• Developed two responsive interfaces using React.js and Tailwind CSS: one for users to query reports and another for admins to manage uploaded documents.</li>
+        <li>• Integrated LangChain with OpenAI, PDF loaders, and vector databases (Pinecone) in the FastAPI backend to parse, chunk, embed, and store report data for efficient retrieval.</li>
+        <li>• Implemented a modular and scalable backend with MongoDB for user/document management and Pinecone for vector search, enabling intelligent financial data analysis and Q&A.</li>
+      </ul>, 
+  },
+  {
+    title: "Internship",
     company: "Script India",
     duration: "January 2024 - April 2024",
     description:
@@ -155,18 +183,18 @@ export const EXPERIENCES = [
     company: "Script India",
     duration: "27 July 2023 - 10 August 2023",
     description:
-      "Worked on Python as intern for 2 weeks. Worked on Hand Gesture Recognition using modules like pyautogui, cv2 and mediapipe. ",
+      "Worked on Python as intern for 2 weeks and created Hand Gesture Recognition using modules like pyautogui, cv2 and mediapipe. ",
   },
 ];
 
 export const EDUCATION = [
-  {
-    degree: "Machine Learning Course",
-    institution: "Udemy (Online Course)",
-    duration: "October 2024 - Present",
-    description:
-      "This Machine Learning course has covered all topic by the Instructor and the course is packed with practical exercises that are based on real-life case studies.",
-  },
+  // {
+  //   degree: "Machine Learning Course",
+  //   institution: "Udemy (Online Course)",
+  //   duration: "October 2024 - Present",
+  //   description:
+  //     "This Machine Learning course has covered all topic by the Instructor and the course is packed with practical exercises that are based on real-life case studies.",
+  // },
   {
     degree: "Bachelor of Engineering in Information Technology",
     institution: "Shantilal Shah Government Engineering College, Bhavnagar",
